@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ksense-bg-color);
+}
+
+tr {
+  cursor: pointer;
+}
+
+#back-icon {
+  width: 25px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.25s linear;
+}
+
+#back-icon:hover {
+  transform: scale(1.25);
+  transition: transform 0.25s linear;
+}
