@@ -1,6 +1,7 @@
 /**
  * This functions calls the API to get all users
- * @returns {Array} Returns users array
+ * @async
+ * @returns {Promise<Array>} Returns users array
  */
 export const getAllUsers = async () => {
   const allUsersEndpoint = "https://jsonplaceholder.typicode.com/users/";
@@ -15,8 +16,9 @@ export const getAllUsers = async () => {
 
 /**
  * This functions calls the API to get all posts
+ * @async
  * @param {Number} userId
- * @returns {Array} Return posts array for that specific User
+ * @returns {Promise<Array>} Return posts array for that specific User
  */
 export const getAllPosts = async (userId) => {
   const allPostsOfUserEndpoint = `https://jsonplaceholder.typicode.com/users/${userId}/posts`;
